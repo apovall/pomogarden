@@ -14,7 +14,7 @@
 ## System Overview
  - Express.js backend, providing map generation services
  - React for UI components, encompassing,
- - PIXI.js + Traviso (isometric PIXI tilemap implementation) 
+ - Phaser for game aspect
  - All to be hosted on AWS
     - DynamoDB for storing map and game states for users
     - Cognito or JWT for user management
@@ -22,7 +22,8 @@
 
 ## Core Requirements
  - Backend: Express
- - Frontend: React + PIXI + Traviso
+ - Frontend: React
+ - Game Engine: Phaser
 
 
 ## Future ideas:
@@ -32,12 +33,21 @@
 
 ## Current Objectives
  - Develop MVP
-    - 1) Automatic generation of game maps
-    - 2) Storage of game maps
+    - [x] Get example code running
+    - Implementation of isometric engine
+    - Get isometric engine to access json file remotely
+    - Get isometric engine to populate assets
+    - Implement dynamic map seeding 
+    - Implement system for placing assets dynamically 
+
  - Host on AWS S3
     - Get Github actions working to automate the deploy process
 
+# Resources:
+ - https://www.npmjs.com/package/phaser
 
 ## Resources: Getting started:
  - https://www.freecodecamp.org/news/create-a-react-frontend-a-node-express-backend-and-connect-them-together-c5798926047c/
  - https://www.freecodecamp.org/news/how-to-enable-es6-and-beyond-syntax-with-node-and-express-68d3e11fe1ab/
+ - https://tnodes.medium.com/creating-an-isometric-view-in-phaser-3-fada95927835 
+ - Phaser + React examples: https://github.com/nodes777/flower-game-phaser3
