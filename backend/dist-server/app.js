@@ -7,6 +7,8 @@ exports["default"] = void 0;
 var _express = _interopRequireDefault(require("express"));
 var _path = _interopRequireDefault(require("path"));
 var _morgan = _interopRequireDefault(require("morgan"));
+var _bodyParser = _interopRequireDefault(require("body-parser"));
+var _cors = _interopRequireDefault(require("cors"));
 var _index = _interopRequireDefault(require("./routes/index"));
 var _users = _interopRequireDefault(require("./routes/users"));
 var _mapGenerator = _interopRequireDefault(require("./routes/mapGenerator"));
@@ -15,14 +17,16 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 
 var app = (0, _express["default"])();
 app.use((0, _morgan["default"])('dev'));
-app.use(_express["default"].json());
-app.use(_express["default"].urlencoded({
+app.use(_bodyParser["default"].urlencoded({
   extended: false
 }));
+app.use(_bodyParser["default"].json());
+// app.use(express.json());
+// app.use(express.urlencoded({ extended: false }));
 // app.use(cookieParser());
 app.use(_express["default"]["static"](_path["default"].join(__dirname, '../public')));
 app.use('/', _index["default"]);
 app.use('/users', _users["default"]);
-app.use('/map_generator', _mapGenerator["default"]);
+app.use('/mapGenerator', _mapGenerator["default"]);
 var _default = app;
 exports["default"] = _default;

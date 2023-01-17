@@ -14,7 +14,8 @@ var config = {
   scene: {
       preload: preload,
       create: create
-  }
+  },
+  parent: "game-wrapper"
 };
 
 function preload ()
@@ -47,4 +48,4 @@ function create ()
   emitter.startFollow(logo);
 }
 
-export let game = new Phaser.Game(config);
+export var game = new Phaser.Game(config);
