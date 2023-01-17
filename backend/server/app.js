@@ -3,9 +3,6 @@ import path from 'path'
 // import cookieParser from 'cookieParser'
 import logger from 'morgan'
 import bodyParser from 'body-parser'
-import cors from 'cors'
-
-
 
 import indexRouter from './routes/index'
 import usersRouter from './routes/users'

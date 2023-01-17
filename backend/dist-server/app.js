@@ -8,7 +8,6 @@ var _express = _interopRequireDefault(require("express"));
 var _path = _interopRequireDefault(require("path"));
 var _morgan = _interopRequireDefault(require("morgan"));
 var _bodyParser = _interopRequireDefault(require("body-parser"));
-var _cors = _interopRequireDefault(require("cors"));
 var _index = _interopRequireDefault(require("./routes/index"));
 var _users = _interopRequireDefault(require("./routes/users"));
 var _mapGenerator = _interopRequireDefault(require("./routes/mapGenerator"));

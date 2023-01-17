@@ -61,3 +61,8 @@
  - Phaser + React examples: https://github.com/nodes777/flower-game-phaser3
  - [Isometric example](http://labs.phaser.io/view.html?src=src\tilemap\isometric\isometric%20test.js&v=3.55.2)
  - [React + Phaser with comms](https://pablo.gg/en/blog/coding/i-made-a-top-down-game-version-of-my-blog-with-phaser-and-react/)
+ - [Phase Docs](https://newdocs.phaser.io/docs/3.54.0/Phaser.Tilemaps.Tilemap)
+
+
+## Assets Used:
+- [Isometric Placeholder Terrain](https://devilsworkshop.itch.io/big-pixel-isometric-block-pack-free-2d-sprites?download)

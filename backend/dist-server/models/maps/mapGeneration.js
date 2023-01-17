@@ -18,8 +18,8 @@ var MapGenerator = /*#__PURE__*/function () {
     _classCallCheck(this, MapGenerator);
     this.mapWidth = mapWidth; // In tiles
     this.mapHeight = mapHeight; // in tiles
-    this.floorTile = "1";
-    this.wallTile = "0";
+    this.floorTile = 0;
+    this.wallTile = 1;
     this.cellularAutomatonCount = 4;
     this.wallCountThreshold = 4;
   }
